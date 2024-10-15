@@ -3,27 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css"href=style.css>
- 
+    <title>TINA&FIONA IN NEW YORK</title>
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Container to hold the video and text */
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full screen height */
+        }
+
+        /* Video styling */
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure video covers the entire container */
+        }
+
+        /* Text styling (absolute positioning) */
+        .text-overlay {
+            position: absolute;
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            white-space: nowrap;
+            transform: translate(-50%, -50%); /* Offset to perfectly center */
+            color: red;
+            font-size: 100px;
+            font-weight: bold;
+            text-align: center;
+            z-index: 20; /* Ensure text is on top of the video */
+        }
+
+    </style>
+  
 </head>
 <body>
-    <div>
-        <h1>FILTER 02</h1>
-        <h2>My food diary </h2>
-        <h3>
-          The french tost is from one of the french restaurent near my aprtment, I never try befor. Toady
-      </h3>
-        <img src="https://cdn.glitch.global/40c7fe8b-0384-4da7-9c1c-f3f8452aac2b/fqs%202024-09-25%20115405.327.JPG?v=1727813225719" alt="Description of image" width="1000" height="700">
-      <h3>
-        
-      </h3>
-        <img src="https://cdn.glitch.global/91f09572-8ffb-4c48-a6e4-b37470dfe7fe/fqs%202024-09-27%20152208.399.JPG?v=1727810159196" alt="Description of image" width="400" height="200"
+    <div class="container">
+        <!-- Video Section -->
+        <video autoplay muted loop>
+            <source src="https://cdn.glitch.global/40c7fe8b-0384-4da7-9c1c-f3f8452aac2b/3_1729018189(Video%20in%20Original%20Quality).mp4?v=1729018351312" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-      
-       
+        <!-- Text Overlay Section -->
+        <div class="text-overlay">
+            <span>TINA&FION IN NEW YORK</span>
+        </div>
+      </div>
     </div>
-
-
 </body>
 </html>
